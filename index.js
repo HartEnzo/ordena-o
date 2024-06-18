@@ -1,10 +1,8 @@
-let numeros =[4, 1, 4, 6, 7, -45, 2001];
+let numeros =[4, 4, 1, 6, 7, -45, 2001];
 
 for (let i = 0; i < numeros.length; i++) {
-    console.log("No primeiro laço: ", numeros[i])
+   
     for (let j = i + 1; j < numeros.length; j++) {
-console.log("No segundo laço: ", numeros[j])
-    
 if(numeros[i] > numeros[j]){
     let aux = numeros[i]
     numeros[i]= numeros[j]
@@ -14,3 +12,15 @@ if(numeros[i] > numeros[j]){
 }
 }
 console.log(numeros)
+
+for (let i = 0; i < numeros.length; i++) {
+   
+    for (let j = i + 1; j < numeros.length; j++) {
+    if (numeros[i] == numeros[j]) {
+        numeros.splice(j, 1)
+    j--
+    }
+    }
+
+}
+
