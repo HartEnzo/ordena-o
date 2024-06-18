@@ -7,7 +7,7 @@ if(numeros[i] > numeros[j]){
     let aux = numeros[i]
     numeros[i]= numeros[j]
     numeros[j]= aux 
-}else if(numeros[i] == numeros[i]){
+}else if(numeros[i] == numeros[j]){
     numeros.splice(j, 1)
     j--
 }
